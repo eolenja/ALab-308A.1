@@ -9,4 +9,24 @@ try{
     console.error (error)
     console.log (count)
 }}
-incrementCount()
+incrementCount();
+
+//const flattenArray = (arr) => { 
+
+    function flattenArr(arr){
+        const givenArr = arr.flat()
+        try{
+            console.log(givenArr.flat())
+            flattenArr(arr)
+        } catch(e){
+            console.error(e)
+            console.log(e)
+        }
+     
+    }
+     
+     
+     
+    console.log(flattenArr([[1], [2], [3]]))
+
+//}
